@@ -11,6 +11,7 @@ test project:
     - npm test
 
 build project:
+  stage: build
   image: node:19
   script:
     - npm install

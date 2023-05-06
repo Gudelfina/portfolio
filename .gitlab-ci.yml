@@ -1,3 +1,14 @@
+stages:
+  - test
+  - build
+
+test project:
+  stage: test
+  image: node:19
+  script:
+    - npm install
+    - npm test
+
 build project:
   image: node:19
   script:

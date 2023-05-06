@@ -1,0 +1,6 @@
+build project:
+  image: node:19
+  script:
+    - npm install
+    - npm test
+    - npm build

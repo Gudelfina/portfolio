@@ -16,7 +16,7 @@ build project:
   script:
     - npm install
     - npm run build
-  artifacts: # tells it to save the build folder instead of destroy
+  artifacts: # tells it to save the build folder instead of destroy so netlify can pass
     paths:
       - build/
 

@@ -1,0 +1,23 @@
+nav {
+  @apply fixed top-0 right-0 h-full bg-transparent text-white w-48 flex-shrink-0;
+}
+
+nav ul {
+  @apply py-4;
+}
+
+nav li {
+  @apply px-6 py-2;
+}
+
+nav a {
+  @apply block hover:bg-gray-700;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  overflow-y: scroll;
+}

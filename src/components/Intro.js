@@ -1,15 +1,19 @@
 import React from "react";
 
+import "../styles/Intro.css";
+
 const Intro = () => {
   return (
-    <div className="container ">
-      <div>
-        <p>Hello, world. I'm Gudelfina.</p>
+    <div className="container">
+      <span className="intro-heading">
+        Hello,
+        <span className="intro-name">{"Gudelfina"}</span> here.
+      </span>
+      <div className="intro-section">
         <p>
-          I'm a registered nurse turned software engineer <br />
-          based in Wyoming. I have a great interest in <br />
-          full-stack development, artificial intelligence, and everything in
-          between.
+          I'm a registered nurse turned software engineer based in Wyoming. I
+          have a great interest in full-stack development, artificial
+          intelligence, and everything in between.
         </p>
       </div>
     </div>

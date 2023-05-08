@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .ml-45 {
+    margin-left: 45px;
+  }
+}
+
+.container {
+  @apply mx-auto flex-nowrap flex-row justify-center max-w-6xl py-8 ml-45 text-white;
+  /* border: 2px solid red; */
+}
+
+.container > div {
+  @apply w-full md:w-3/4;
+}
+
+.intro-heading {
+  @apply text-5xl font-extrabold dark:text-white;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1s steps(20) forwards, blink-caret 0.75s step-end infinite;
+  border-right: 0.15em solid #fff;
+  margin-right: 2px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 71%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+.intro-name {
+  @apply text-5xl font-extrabold text-green-300 dark:text-white;
+  /* border: 2px solid red; */
+}
+
+.intro .intro-section {
+  @apply text-sm font-extrabold dark:text-white;
+  /* border: 2px solid red; */
+}

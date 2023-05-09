@@ -11,7 +11,7 @@ const AboutPage = () => {
     "HTML & CSS",
   ];
   return (
-    <div className="about m-9" id="about-nav">
+    <div className="about" id="about-nav">
       <div className="section-header">
         <h1>/about me</h1>
       </div>

@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-scroll";
 
 import "../styles/SideNav.css";
+import email from "../images/email.png";
+import gitlab from "../images/gitlab.png";
+import linkedin from "../images/linkedin.png";
 
 const NavBar = () => {
   return (
@@ -12,10 +15,10 @@ const NavBar = () => {
             to="intro-nav"
             spy={true}
             smooth={true}
-            offset={10}
+            offset={-50}
             duration={500}
           >
-            Home
+            /Home
           </Link>
         </li>
         <li>
@@ -26,7 +29,7 @@ const NavBar = () => {
             offset={2}
             duration={500}
           >
-            About
+            /About
           </Link>
         </li>
         <li>
@@ -34,13 +37,24 @@ const NavBar = () => {
             to="experience-nav"
             spy={true}
             smooth={true}
-            offset={20}
+            offset={50}
             duration={500}
           >
-            Experience
+            /Experience
           </Link>
         </li>
       </ul>
+      <div className="logos-nav">
+        <a href="mailto:gudelfina.mendez@gmail.com">
+          <img src={email} alt="email icon" width="20" height="20" />
+        </a>
+        <a href="https://gitlab.com/Gudelfina3" target="blank">
+          <img src={gitlab} alt="gitlab icon" width="20" height="20" />
+        </a>
+        <a href="https://www.linkedin.com/in/gudelfina-mendez/" target="blank">
+          <img src={linkedin} alt="linkedin icon" width="20" height="20" />
+        </a>
+      </div>
     </nav>
   );
 };

@@ -1,4 +1,17 @@
 .about {
   height: 600px;
-  background-color: green;
+  /* background-color: green; */
+}
+
+.about {
+  @apply mx-auto flex-nowrap flex-row justify-center max-w-6xl py-8 m-9 text-white;
+  height: 600px;
+}
+
+.about > div {
+  @apply w-full md:w-1/2;
+}
+
+.section-header {
+  @apply text-5xl font-extrabold dark:text-white;
 }

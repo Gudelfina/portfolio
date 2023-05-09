@@ -9,8 +9,9 @@
 }
 
 .container {
-  @apply mx-auto flex-nowrap flex-row justify-center max-w-6xl py-8 ml-45 text-white;
+  @apply mx-auto flex-nowrap flex-row justify-center max-w-6xl py-8 m-9 text-white;
   height: 600px;
+  /* background-color: lightcoral; */
 }
 
 .container > div {

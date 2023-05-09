@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../styles/About.css";
+
 const AboutPage = () => {
   const tech_stack = [
     "Python",
@@ -9,7 +11,7 @@ const AboutPage = () => {
     "HTML & CSS",
   ];
   return (
-    <div className="about">
+    <div className="about m-9" id="about-nav">
       <div className="section-header">
         <h1>/about me</h1>
       </div>
@@ -19,8 +21,8 @@ const AboutPage = () => {
         </p>
         <p>Here are some Technologies I've been working with:</p>
         <ul>
-          {tech_stack.map((tech) => {
-            return <li>{tech}</li>;
+          {tech_stack.map((tech, index) => {
+            return <li key={index}>{tech}</li>;
           })}
         </ul>
         <p>

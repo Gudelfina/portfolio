@@ -11,6 +11,11 @@ module.exports = {
       display: ["IBM Plex Mono", "Menlo", "monospace"],
       body: ["IBM Plex Mono", "Menlo", "monospace"],
     },
+    screens: {
+      sm: "640px",
+      md: "760px",
+      lg: "1400px",
+    },
   },
   plugins: [require("flowbite/plugin")],
 };

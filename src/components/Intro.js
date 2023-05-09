@@ -4,7 +4,7 @@ import "../styles/Intro.css";
 
 const Intro = () => {
   return (
-    <div className="container">
+    <div className="container" id="intro-nav">
       <span className="intro-heading">
         Hello,
         <span className="intro-name">{"Gudelfina"}</span> here.

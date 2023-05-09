@@ -1,23 +1,17 @@
 import Intro from "./components/Intro.js";
 import AboutPage from "./components/About.js";
 import Experience from "./components/Experience.js";
-import SideBar from "./components/SideBar.js";
+import NavBar from "./components/NavBar.js";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-function App() {
+const App = () => {
   return (
-    <BrowserRouter>
-      <div className="container">
-        <SideBar />
-        <Routes>
-          <Route path="/" element={<Intro />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/experience" element={<Experience />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <div className="full-container">
+      <NavBar />
+      <Intro />
+      <AboutPage />
+      <Experience />
+    </div>
   );
-}
+};
 
 export default App;

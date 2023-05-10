@@ -11,46 +11,31 @@
 .container {
   @apply mx-auto flex-nowrap flex-row justify-center max-w-6xl py-8 m-9 text-white;
   height: 600px;
-  /* background-color: lightcoral; */
 }
 
 .container > div {
-  @apply w-full md:w-1/2;
+  @apply w-full md:w-1/2 sm:w-1/4;
 }
 
 .intro-heading {
-  @apply text-5xl font-extrabold dark:text-white;
+  @apply text-4xl lg:text-5xl font-extrabold dark:text-white;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 1.5s steps(30) forwards, blink-caret 0.6s step-end infinite;
-  border-right: 0.15em solid pink;
-  margin-right: 2px;
+  animation: typing 3s steps(30) forwards alternate infinite;
 }
 
 @keyframes typing {
   from {
-    width: 0%;
+    text-indent: 100%;
   }
   to {
-    width: 53%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: pink;
+    text-indent: -4%;
   }
 }
 
 .intro-name {
-  @apply text-5xl font-extrabold text-green-300 dark:text-white;
+  @apply lg:text-5xl md:text-4xl font-extrabold text-green-300 dark:text-white;
 }
 
-.intro .intro-section {
-  @apply text-sm font-extrabold dark:text-white;
-}
+/* border-2 border-red-500 */

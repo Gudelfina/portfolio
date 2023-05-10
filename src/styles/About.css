@@ -1,17 +1,44 @@
+/* .about * {
+  border: 1px solid black;
+} */
 .about {
-  height: 600px;
-  /* background-color: green; */
-}
-
-.about {
-  @apply mx-auto flex-nowrap flex-row justify-center max-w-6xl py-8 m-9 text-white;
+  @apply mx-auto flex-nowrap flex-row flex justify-start overflow-y-scroll max-w-6xl py-8 m-9 text-white;
   height: 600px;
 }
 
 .about > div {
-  @apply w-full md:w-1/2;
+  @apply w-full md:w-full;
 }
 
 .section-header {
-  @apply text-5xl font-extrabold dark:text-white;
+  @apply text-4xl lg:text-5xl m-8 font-extrabold dark:text-white;
+}
+
+.about-content {
+  @apply flex flex-row inline-block text-sm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-border {
+  @apply max-w-sm p-6 m-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700;
+  max-width: 50%;
+}
+
+.card-name {
+  @apply my-4 text-2xl text-blueScreen font-extrabold;
+}
+
+.card-content {
+  @apply mb-3 text-sm text-blueScreen dark:text-gray-400;
+}
+
+.resume-link {
+  @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-500 rounded-lg hover:bg-pink-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+}
+
+.my-image {
+  @apply inline-block max-h-80 max-w-fit m-8;
+  max-width: 50%;
 }

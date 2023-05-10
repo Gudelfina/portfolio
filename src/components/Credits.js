@@ -29,3 +29,5 @@ const Credits = () => {
     </div>
   );
 };
+
+export default Credits;

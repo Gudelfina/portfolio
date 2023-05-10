@@ -1,35 +1,35 @@
 import React from "react";
 
 import "../styles/About.css";
+import me from "../images/me.png";
 
 const AboutPage = () => {
-  const tech_stack = [
-    "Python",
-    "Javascript ES6+",
-    "React.js",
-    "Django",
-    "HTML & CSS",
-  ];
   return (
     <div className="about" id="about-nav">
       <div className="section-header">
         <h1>/about me</h1>
-      </div>
-      <div className="about-content">
-        <p>
-          I'm currently a <b>Software engineer</b>
-        </p>
-        <p>Here are some Technologies I've been working with:</p>
-        <ul>
-          {tech_stack.map((tech, index) => {
-            return <li key={index}>{tech}</li>;
-          })}
-        </ul>
-        <p>
-          Outside of work, I'm interest in crochet, <b />
-          learning the guitar, <b /> building legos, <b />
-          and enjoying the outdoors (when it's not snowing 24/7)
-        </p>
+        <div className="about-content">
+          <img className="my-image" src={me} alt="a girl" />
+          <div className="card-border">
+            <h1 className="card-name">Hello, I'm Gudelfina!</h1>
+            <p className="card-content">
+              I'm a <b>software engineer</b> based in Wyoming. Before becoming a
+              software engineer, I was a registered nurse working in the ICU.
+              While, I loved being able to help and care for people, it began to
+              take a toll on me, mentally and physcially. So I decided to change
+              careers and become a software engineer! I've always had a great
+              interest in building something from scratch, artificial
+              intelligence, and everything in between!
+            </p>
+            <a
+              href={require("../resume/resume.pdf")}
+              download
+              className="resume-link"
+            >
+              Resume
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

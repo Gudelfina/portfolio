@@ -19,6 +19,11 @@ nav {
 }
 
 .logos-nav {
-  @apply flex justify-items-center mt-auto gap-x-8 gap-y-4;
-  border-color: red;
+  @apply flex justify-items-center mt-auto px-4 gap-x-8 gap-y-4;
 }
+
+.connect {
+  @apply p-4;
+}
+
+/* border-2 border-red-500 */

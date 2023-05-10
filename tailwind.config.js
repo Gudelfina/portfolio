@@ -17,7 +17,10 @@ module.exports = {
         lg: "1400px",
       },
       colors: {
-        orange: "#f4a261",
+        orangeLight: "#f4a261",
+        beige: "#f2e8cf",
+        blueScreen: "#415a77",
+        brownLight: "#c9ada7",
       },
     },
   },

@@ -44,6 +44,9 @@ const NavBar = () => {
           </Link>
         </li>
       </ul>
+      <div>
+        <h2 className="connect">Connect with me!</h2>
+      </div>
       <div className="logos-nav">
         <a href="mailto:gudelfina.mendez@gmail.com">
           <img src={email} alt="email icon" width="20" height="20" />

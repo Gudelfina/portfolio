@@ -9,7 +9,7 @@
 }
 
 .container {
-  @apply mx-auto flex-nowrap flex-row justify-center max-w-6xl py-8 m-9 text-white;
+  @apply mx-auto flex flex-wrap justify-center items-center max-w-6xl py-8 m-9 text-white h-96 sm:h-auto;
   height: 600px;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .intro-name {
-  @apply lg:text-5xl md:text-4xl font-extrabold text-green-300 dark:text-white;
+  @apply lg:text-5xl md:text-4xl font-extrabold text-brownLight dark:text-white;
 }
 
 /* border-2 border-red-500 */

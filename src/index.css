@@ -9,7 +9,7 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #415a77;
+  background-color: #a4c3b2;
   color: white;
 }
 
@@ -17,3 +17,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* 415a77 */

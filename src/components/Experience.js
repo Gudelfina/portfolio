@@ -4,8 +4,8 @@ import "../styles/Experience.css";
 
 const Experience = () => {
   return (
-    <div className="experience m-8" id="experience-nav">
-      <p>Experience</p>
+    <div className="skills m-8" id="skills-nav">
+      <p>/skills</p>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 /* .about * {
   border: 1px solid black;
 } */
+
 .about {
   @apply mx-auto flex-nowrap flex-row flex justify-start overflow-y-scroll max-w-6xl py-8 m-9 text-white;
   height: 600px;
@@ -15,10 +16,7 @@
 }
 
 .about-content {
-  @apply flex flex-row inline-block text-sm;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @apply flex flex-row justify-between content-center inline-block text-sm;
 }
 
 .card-border {
@@ -40,5 +38,4 @@
 
 .my-image {
   @apply inline-block max-h-80 max-w-fit m-8;
-  max-width: 50%;
 }

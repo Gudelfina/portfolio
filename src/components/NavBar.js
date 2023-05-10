@@ -34,13 +34,13 @@ const NavBar = () => {
         </li>
         <li>
           <Link
-            to="skills-nav"
+            to="projects-nav"
             spy={true}
             smooth={true}
             offset={50}
             duration={500}
           >
-            /Skills
+            /projects
           </Link>
         </li>
       </ul>

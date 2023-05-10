@@ -6,7 +6,7 @@ import girl from "../images/girl.png";
 const Intro = () => {
   return (
     <div className="container" id="intro-nav">
-      <div>
+      <div className="polariod">
         <img src={girl} alt="a girl with a pink hat" />
       </div>
       <span className="intro-heading">

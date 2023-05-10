@@ -3,7 +3,7 @@
 } */
 
 .about {
-  @apply mx-auto flex-nowrap flex-row flex justify-start overflow-y-scroll max-w-6xl py-8 m-9 text-white;
+  @apply mx-auto flex-nowrap flex-row flex justify-start max-w-6xl py-8 m-9 text-white sm:h-auto;
   height: 600px;
 }
 
@@ -16,11 +16,11 @@
 }
 
 .about-content {
-  @apply flex flex-row justify-between content-center inline-block text-sm;
+  @apply flex flex-row flex-wrap justify-between content-center inline-block text-sm;
 }
 
 .card-border {
-  @apply max-w-sm p-6 m-8 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700;
+  @apply max-w-sm p-6 m-8 bg-white border border-gray-200 rounded-lg shadow hover:bg-lightGray  dark:bg-gray-800 dark:border-gray-700;
   max-width: 50%;
 }
 

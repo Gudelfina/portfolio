@@ -9,7 +9,7 @@
 }
 
 .container {
-  @apply mx-auto flex flex-wrap justify-center items-center max-w-6xl py-8 m-9 text-white h-96 sm:h-auto;
+  @apply mx-auto flex flex-wrap justify-center items-center max-w-6xl py-8 m-9 text-white h-96 sm:h-auto sm:w-auto;
   height: 600px;
 }
 
@@ -30,7 +30,7 @@
     text-indent: 100%;
   }
   to {
-    text-indent: -4%;
+    text-indent: -10%;
   }
 }
 

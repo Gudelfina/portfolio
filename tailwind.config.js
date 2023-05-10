@@ -18,10 +18,11 @@ module.exports = {
       },
       colors: {
         orangeLight: "#f4a261",
-        beige: "#f2e8cf",
+        beige: "#e3d5ca",
         blueScreen: "#415a77",
         brownLight: "#a98467",
         darkGreen: "#6b9080",
+        lightGray: "#E3DBDB",
       },
     },
   },

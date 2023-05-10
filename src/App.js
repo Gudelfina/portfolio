@@ -1,6 +1,6 @@
 import Intro from "./components/Intro.js";
 import AboutPage from "./components/About.js";
-import Experience from "./components/Experience.js";
+import Projects from "./components/Projects.js";
 import NavBar from "./components/NavBar.js";
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
       <NavBar />
       <Intro />
       <AboutPage />
-      <Experience />
+      <Projects />
     </div>
   );
 };

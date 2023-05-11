@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { Icon } from "@iconify/react";
 
 import "../styles/SideNav.css";
-import email from "../images/email.png";
-import gitlab from "../images/gitlab.png";
-import linkedin from "../images/linkedin.png";
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(true);
 
   useEffect(() => {
-    const isMobile = () => {
+    const handleResize = () => {
       if (window.innerWidth < 600) {
         setExpanded(false);
       } else {
@@ -18,20 +16,18 @@ const NavBar = () => {
       }
     };
 
-    // Call isMobile initially and add event listener
-    isMobile();
-    window.addEventListener("resize", isMobile);
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
-    // Clean up the event listener on component unmount
     return () => {
-      window.removeEventListener("resize", isMobile);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
-    <nav>
-      {(expanded || window.innerWidth < 600) && (
-        <div>
+    <div className="sidebar-nav">
+      <div className="sidebar-links">
+        {(expanded || window.innerWidth < 600) && (
           <ul>
             <li>
               <Link
@@ -41,7 +37,7 @@ const NavBar = () => {
                 offset={-50}
                 duration={500}
               >
-                /Home
+                /home
               </Link>
             </li>
             <li>
@@ -52,7 +48,7 @@ const NavBar = () => {
                 offset={2}
                 duration={500}
               >
-                /About
+                /about
               </Link>
             </li>
             <li>
@@ -66,27 +62,50 @@ const NavBar = () => {
                 /projects
               </Link>
             </li>
+            <li>
+              <Link
+                to="experience"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                /experience
+              </Link>
+            </li>
           </ul>
-          <div>
-            <h2 className="connect">Connect with me!</h2>
-          </div>
-          <div className="logos-nav">
-            <a href="mailto:gudelfina.mendez@gmail.com">
-              <img src={email} alt="email icon" width="20" height="20" />
-            </a>
-            <a href="https://gitlab.com/Gudelfina3" target="blank">
-              <img src={gitlab} alt="gitlab icon" width="20" height="20" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/gudelfina-mendez/"
-              target="blank"
-            >
-              <img src={linkedin} alt="linkedin icon" width="20" height="20" />
-            </a>
-          </div>
-        </div>
-      )}
-    </nav>
+        )}
+      </div>
+      <div className="sidebar-logos">
+        <a href="mailto:gudelfina.mendez@gmail.com">
+          <Icon
+            className="logo-icon"
+            icon="ic:baseline-email"
+            color="#b5838d"
+            width="24"
+            height="24"
+          />
+        </a>
+        <a href="https://gitlab.com/Gudelfina3" target="blank">
+          <Icon
+            className="logo-icon"
+            icon="teenyicons:gitlab-solid"
+            color="#b5838d"
+            width="24"
+            height="24"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/gudelfina-mendez/" target="blank">
+          <Icon
+            className="logo-icon"
+            icon="mdi:linkedin"
+            color="#b5838d"
+            width="24"
+            height="24"
+          />
+        </a>
+      </div>
+    </div>
   );
 };
 

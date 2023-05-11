@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
+import { Icon } from "@iconify/react";
 
 import "../styles/Projects.css";
-import gitlab from "../images/gitlab.png";
 import task from "../images/task.png";
 import playboxx from "../images/playboxx.png";
 import car from "../images/car.png";
@@ -81,7 +81,13 @@ const Projects = () => {
               <div className="text-black">{selectedProject["techStack"]}</div>
               <div className="text-black">
                 <a href={selectedProject["link"]} target="blank">
-                  <img src={gitlab} alt="gitlab icon" width="20" height="20" />
+                  <Icon
+                    className="logo-icon"
+                    icon="teenyicons:gitlab-solid"
+                    color="#b5838d"
+                    width="24"
+                    height="24"
+                  />
                 </a>
               </div>
               {console.log(selectedProject)}

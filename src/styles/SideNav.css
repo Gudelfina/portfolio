@@ -1,46 +1,95 @@
-/* nav * {
+/* .sidebar-nav * {
   border: 1px solid black;
 } */
 
-nav {
-  @apply fixed top-0 right-0 h-full bg-transparent text-white w-48 flex-shrink-0;
-}
-
-nav ul {
-  @apply py-4;
-}
-
-nav li {
-  @apply px-6 py-2;
-}
-
-nav {
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
-  height: 100%;
-  overflow-y: scroll;
+  padding-top: 20px;
+  padding-right: 5%;
+  background-color: transparent;
+  z-index: 999;
+  height: 100vh;
 }
 
-.a {
-  @apply hover:text-pink-300;
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  font-family: "NTR", sans-serif;
+  letter-spacing: 0em;
+  line-height: 1.6em;
+  font-size: 16px;
+  padding: 0.2em;
+  font-weight: bold;
+  padding-top: 0px;
+  @apply text-lightPurple;
+  align-items: flex-end;
 }
 
-.logos-nav {
-  @apply flex justify-items-center mt-auto px-4 gap-x-8 gap-y-4;
+.sidebar-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.connect {
-  @apply p-4;
+.sidebar-links li {
+  padding: 0px;
 }
 
+.sidebar-links a {
+  text-decoration: none;
+  @apply text-lightPurple hover:text-pink-300 font-bold;
+}
+
+.sidebar-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 8px;
+  align-items: flex-end;
+}
+
+.sidebar-logos a {
+  margin-right: 8px;
+}
+
+.logo-icon {
+  @apply transform transition duration-700 ease-in-out hover:scale-150;
+}
 @media only screen and (max-width: 600px) {
-  nav {
-    position: unset;
-    align-items: center;
-  }
-  .logos-nav {
+  .sidebar-nav {
     width: 100%;
-    padding-left: unset;
+    height: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .sidebar-links {
+    padding-left: 20px;
+    flex-direction: row;
+    font-size: 9px;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .sidebar-links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-logos {
+    justify-content: center;
+    padding-top: 8px;
+    width: 100%;
+    align-items: flex-end;
   }
 }

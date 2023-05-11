@@ -1,3 +1,7 @@
+/* nav * {
+  border: 1px solid black;
+} */
+
 nav {
   @apply fixed top-0 right-0 h-full bg-transparent text-white w-48 flex-shrink-0;
 }
@@ -18,10 +22,25 @@ nav {
   overflow-y: scroll;
 }
 
+.a {
+  @apply hover:text-pink-300;
+}
+
 .logos-nav {
   @apply flex justify-items-center mt-auto px-4 gap-x-8 gap-y-4;
 }
 
 .connect {
   @apply p-4;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    position: unset;
+    align-items: center;
+  }
+  .logos-nav {
+    width: 100%;
+    padding-left: unset;
+  }
 }

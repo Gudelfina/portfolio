@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../styles/About.css";
-import me from "../images/me.png";
+import me2 from "../images/me2.png";
 
 const AboutPage = () => {
   return (
@@ -14,7 +14,7 @@ const AboutPage = () => {
                 <h1>About me</h1>
               </div>
               <div className="about-content">
-                <img className="my-image" src={me} alt="a girl" />
+                <img className="my-image" src={me2} alt="a girl" />
                 <div className="card-container">
                   <div className="card">
                     <h1 className="card-name">Hello, I'm Gudelfina!</h1>

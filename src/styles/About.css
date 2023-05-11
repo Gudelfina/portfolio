@@ -1,13 +1,13 @@
 /* .about * {
   border: 1px solid black;
-}
+} */
 
-.card * {
+/* .card * {
   border: 4px solid black;
 } */
 
 .about {
-  @apply mx-auto flex-nowrap flex-row flex justify-start h-full max-w-6xl py-8 m-8 text-white;
+  @apply mx-auto flex-nowrap flex-row flex h-full max-w-6xl py-8 m-8 text-white;
 }
 
 .about > div {
@@ -31,15 +31,15 @@
 }
 
 .card {
-  @apply bg-white border border-gray-400 rounded-lg drop-shadow-3xl;
+  @apply bg-white border border-gray-400 rounded-lg drop-shadow-3xl flex flex-col justify-center items-center;
 }
 
 .card-name {
-  @apply my-3 text-2xl text-center text-blueScreen font-extrabold;
+  @apply my-3 text-2xl text-center text-brownLight font-extrabold;
 }
 
 .card-content {
-  @apply m-4 text-sm text-blueScreen;
+  @apply m-4 text-sm text-brownLight;
 }
 
 .resume-link {
@@ -47,5 +47,5 @@
 }
 
 .my-image {
-  @apply max-h-screen h-80 max-w-fit m-2.5 drop-shadow-3xl;
+  @apply max-h-screen h-80 w-80 mt-6 drop-shadow-3xl rounded-lg;
 }

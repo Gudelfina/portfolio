@@ -1,10 +1,10 @@
-.projects * {
+/* .projects * {
   border: 1px solid black;
-}
+} */
 
 .projects {
   /* height: 600px; */
-  @apply mx-auto flex-nowrap flex-row justify-center h-full w-screen py-8 m-9 text-black border-2;
+  @apply mx-auto flex-nowrap flex-row justify-center h-full max-w-6xl py-8 m-9 text-black;
 }
 
 .projects-header {

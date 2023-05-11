@@ -4,7 +4,6 @@
 
 .about {
   @apply mx-auto flex-nowrap flex-row flex justify-start h-full max-w-6xl py-8 m-9 text-white;
-  /* height: 600px; */
 }
 
 .about > div {

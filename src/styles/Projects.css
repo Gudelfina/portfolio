@@ -3,18 +3,9 @@
 } */
 
 .projects {
-  /* height: 600px; */
   @apply mx-auto flex-nowrap flex-row justify-center h-full max-w-6xl py-8 m-9 text-black;
 }
 
 .projects-header {
   @apply h-auto w-auto m-8 text-4xl text-white font-extrabold lg:text-5xl;
 }
-
-/* .card-border {
-  @apply transform transition duration-700 ease-in-out hover:scale-125;
-} */
-
-/* .card-border {
-  @apply sm:columns-12 md:columns-6 lg:columns-4;
-} */

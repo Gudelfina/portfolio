@@ -51,14 +51,14 @@ const Projects = () => {
   return (
     <div className="projects" id="projects-nav">
       <h1 className="projects-header">/projects</h1>
-      <div className="project-container lg:grid lg:grid-cols-3 lg:gap-10 md:grid md:grid-cols-3 md:gap-10 sm:flex sm:flex-wrap sm:content-center sm:gap-100">
+      <div className="project-container lg:grid lg:grid-cols-3 lg:gap-10 md:grid md:grid-cols-3 md:gap-10 m:flex sm:flex-wrap sm:content-center sm:gap-10">
         {Object.keys(allProjects).map((key, i) => (
           <ul key={i}>
-            <li className="project-card flex-row justify-center align-center text-center h-full bg-white border border-gray-400 rounded-lg transform transition duration-700 ease-in-out hover:scale-110 hover:drop-shadow-2xl">
+            <li className="project-card flex-row justify-center align-center text-center bg-white border border-gray-400 rounded-lg transform transition duration-700 ease-in-out hover:scale-110 hover:drop-shadow-2xl">
               <button className="card-btn" onClick={() => handleModalOpen(key)}>
                 <div className="card-title m-8">
                   {allProjects[key].title}
-                  <img src={allProjects[key].image} alt="project image" />
+                  <img src={allProjects[key].image} alt="project logo" />
                 </div>
               </button>
             </li>
@@ -69,23 +69,6 @@ const Projects = () => {
           onRequestClose={handleModalClose}
           contentLabel="Project Details"
           appElement={document.getElementById("app")}
-          // style={{
-          //   overlay: {
-          //     backgroundColor: "rgba(0, 0, 0, 0.5)",
-          //   },
-          //   content: {
-          //     top: "50%",
-          //     left: "50%",
-          //     right: "auto",
-          //     bottom: "auto",
-          //     marginRight: "-50%",
-          //     transform: "translate(-50%, -50%)",
-          //     width: "80%",
-          //     maxWidth: "600px",
-          //     maxHeight: "80%",
-          //     overflow: "auto",
-          //   },
-          // }}
         >
           {selectedProject && (
             <div>

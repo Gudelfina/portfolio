@@ -50,13 +50,13 @@ const Projects = () => {
 
   return (
     <div className="projects" id="projects-nav">
-      <h1 className="projects-header">/projects</h1>
-      <div className="project-container lg:grid lg:grid-cols-3 lg:gap-10 md:grid md:grid-cols-3 md:gap-10 m:flex sm:flex-wrap sm:content-center sm:gap-10">
+      <h1 className="projects-header">Projects</h1>
+      <div className="project-container mx-auto p-10 md:p-20 grid lg:grid-cols-3 lg:gap-10 md:grid-cols-3 md:gap-10 2xl:grid-cols-3 grid-cols-1 gap-y-10">
         {Object.keys(allProjects).map((key, i) => (
           <ul key={i}>
-            <li className="project-card flex-row justify-center align-center text-center bg-white border border-gray-400 rounded-lg transform transition duration-700 ease-in-out hover:scale-110 hover:drop-shadow-2xl">
+            <li className="project-card flex-row justify-center align-center text-center h-full bg-white border border-gray-400 rounded-lg transform transition duration-700 ease-in-out hover:scale-110 hover:drop-shadow-2xl">
               <button className="card-btn" onClick={() => handleModalOpen(key)}>
-                <div className="card-title m-8">
+                <div className="card-title m-8 text-lg bold">
                   {allProjects[key].title}
                   <img src={allProjects[key].image} alt="project logo" />
                 </div>

@@ -26,6 +26,7 @@ module.exports = {
       },
       dropShadow: {
         "2xl": "0 0px 10px #ffafcc",
+        "3xl": "0 0px 10px white",
       },
     },
   },

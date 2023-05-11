@@ -3,9 +3,9 @@
 } */
 
 .projects {
-  @apply mx-auto flex-nowrap flex-row justify-center h-full max-w-6xl py-8 m-9 text-black;
+  @apply mx-auto flex-nowrap flex-row justify-center h-full max-w-6xl py-8 m-9 text-brownLight;
 }
 
 .projects-header {
-  @apply h-auto w-auto m-8 text-4xl text-white font-extrabold lg:text-5xl;
+  @apply h-auto w-auto m-8 text-4xl text-center text-white font-extrabold md:text-5xl lg:text-5xl;
 }

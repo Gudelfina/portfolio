@@ -1,5 +1,20 @@
-.projects {
-  height: 600px;
-  /* background-color: pink; */
-  @apply mx-auto flex-nowrap flex-row justify-center max-w-6xl py-8 m-9 text-white border-2 border-red-500;
+.projects * {
+  border: 1px solid black;
 }
+
+.projects {
+  /* height: 600px; */
+  @apply mx-auto flex-nowrap flex-row justify-center h-full w-screen py-8 m-9 text-black border-2;
+}
+
+.projects-header {
+  @apply h-auto w-auto m-8 text-4xl text-white font-extrabold lg:text-5xl;
+}
+
+/* .card-border {
+  @apply transform transition duration-700 ease-in-out hover:scale-125;
+} */
+
+/* .card-border {
+  @apply sm:columns-12 md:columns-6 lg:columns-4;
+} */

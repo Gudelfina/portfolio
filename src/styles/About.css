@@ -3,8 +3,8 @@
 } */
 
 .about {
-  @apply mx-auto flex-nowrap flex-row flex justify-start max-w-6xl py-8 m-9 text-white sm:h-auto;
-  height: 600px;
+  @apply mx-auto flex-nowrap flex-row flex justify-start h-full max-w-6xl py-8 m-9 text-white;
+  /* height: 600px; */
 }
 
 .about > div {
@@ -12,30 +12,30 @@
 }
 
 .section-header {
-  @apply text-4xl lg:text-5xl m-8 font-extrabold dark:text-white;
+  @apply my-36 text-4xl lg:text-5xl m-8 font-extrabold;
 }
 
 .about-content {
-  @apply flex flex-row flex-wrap justify-between content-center inline-block text-sm;
+  @apply flex flex-row flex-wrap justify-between content-center text-sm;
 }
 
-.card-border {
-  @apply max-w-sm p-6 m-8 bg-white border border-gray-200 rounded-lg shadow hover:bg-lightGray  dark:bg-gray-800 dark:border-gray-700;
+.card {
+  @apply max-w-sm p-2.5 m-2.5 bg-white border border-gray-400 rounded-lg drop-shadow-2xl;
   max-width: 50%;
 }
 
 .card-name {
-  @apply my-4 text-2xl text-blueScreen font-extrabold;
+  @apply my-3 text-2xl text-blueScreen font-extrabold;
 }
 
 .card-content {
-  @apply mb-3 text-sm text-blueScreen dark:text-gray-400;
+  @apply m-4 text-sm text-blueScreen;
 }
 
 .resume-link {
-  @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-500 rounded-lg hover:bg-pink-300 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+  @apply inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-pink-500 rounded-lg hover:bg-pink-300 focus:ring-4 focus:outline-none focus:ring-blue-300;
 }
 
 .my-image {
-  @apply inline-block max-h-80 max-w-fit m-8;
+  @apply max-h-80 max-w-fit m-2.5 mx-2.5 drop-shadow-2xl;
 }

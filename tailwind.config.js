@@ -24,6 +24,9 @@ module.exports = {
         darkGreen: "#6b9080",
         lightGray: "#E3DBDB",
       },
+      dropShadow: {
+        "2xl": "0 0px 10px #ffafcc",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

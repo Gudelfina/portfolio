@@ -13,7 +13,7 @@ const AboutPage = () => {
               <h1>/about me</h1>
               <div className="about-content">
                 <img className="my-image" src={me} alt="a girl" />
-                <div className="card-border">
+                <div className="card">
                   <h1 className="card-name">Hello, I'm Gudelfina!</h1>
                   <p className="card-content">
                     I'm a <b>software engineer</b> based in Wyoming. Before

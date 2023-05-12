@@ -69,19 +69,34 @@ const Projects = () => {
           onRequestClose={handleModalClose}
           contentLabel="Project Details"
           appElement={document.getElementById("app")}
+          style={{
+            overlay: {
+              backgroundColor: "#c9b1bd",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            },
+            content: {
+              width: "400px",
+              height: "500px",
+              margin: "auto",
+              border: "none",
+              borderRadius: "4px",
+            },
+          }}
         >
           {selectedProject && (
-            <div>
-              <div className="modal-title text-black">
+            <div className="modal-container flex flex-col justify-center items-center sm:grid-cols-1">
+              <div className="modal-title text-black text-center text-lg m-4">
                 {selectedProject["title"]}
               </div>
-              <div className="modal-desc text-black">
+              <div className="modal-desc text-black text-center m-4">
                 {selectedProject["desc"]}
               </div>
-              <div className="modal-techstack text-black">
+              <div className="modal-techstack text-black text-center m-4">
                 {selectedProject["techStack"]}
               </div>
-              <div className="modal-link text-black">
+              <div className="modal-link text-black m-4">
                 <a href={selectedProject["link"]} target="blank">
                   <Icon
                     className="logo-icon"
@@ -92,12 +107,14 @@ const Projects = () => {
                   />
                 </a>
               </div>
-              {console.log(selectedProject)}
+              <button
+                className="text-black rounded-full bg-lightPurple p-2"
+                onClick={handleModalClose}
+              >
+                Close
+              </button>
             </div>
           )}
-          <button className="text-black" onClick={handleModalClose}>
-            Close
-          </button>
         </Modal>
       </div>
     </div>

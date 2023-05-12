@@ -6,7 +6,7 @@ import me2 from "../images/me2.png";
 const AboutPage = () => {
   return (
     <>
-      <div className="bg-darkGreen">
+      <div className="bg-lightGreen">
         <div className="wrapper mx-auto max-w-6xl">
           <div className="about" id="about-nav">
             <div className="section-header">

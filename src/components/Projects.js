@@ -72,14 +72,16 @@ const Projects = () => {
         >
           {selectedProject && (
             <div>
-              <div className="modal-name text-black">
+              <div className="modal-title text-black">
                 {selectedProject["title"]}
               </div>
               <div className="modal-desc text-black">
                 {selectedProject["desc"]}
               </div>
-              <div className="text-black">{selectedProject["techStack"]}</div>
-              <div className="text-black">
+              <div className="modal-techstack text-black">
+                {selectedProject["techStack"]}
+              </div>
+              <div className="modal-link text-black">
                 <a href={selectedProject["link"]} target="blank">
                   <Icon
                     className="logo-icon"

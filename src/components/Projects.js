@@ -77,11 +77,10 @@ const Projects = () => {
               justifyContent: "center",
             },
             content: {
-              width: "400px",
-              height: "500px",
+              width: "350px",
+              height: "550px",
               margin: "auto",
               border: "none",
-              borderRadius: "4px",
             },
           }}
         >

@@ -22,7 +22,7 @@ module.exports = {
         darkGreen: "#3c5233",
         lightGray: "#E3DBDB",
         lightPurple: "#b5838d",
-        modalPurple: "c9b1bd",
+        modalPurple: "#c9b1bd",
       },
       dropShadow: {
         "2xl": "0 0px 10px #b5838d",

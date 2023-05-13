@@ -1,12 +1,13 @@
-.experience {
-  @apply mx-auto flex-nowrap flex-row flex h-full max-w-6xl py-8 m-8 text-white;
-  height: 600px;
+/* .experience {
+  @apply mx-auto flex-nowrap flex-row flex max-w-6xl py-8 m-8 text-white;
+
 }
 
 .experience > div {
   @apply w-full md:w-full;
-}
+} */
 
 .experience-header {
-  @apply h-auto w-auto m-8 text-4xl text-center text-white font-extrabold md:text-5xl lg:text-5xl;
+  @apply mb-20 pt-10 text-4xl text-center text-white font-extrabold md:text-5xl lg:text-5xl;
 }
+/* height: 600px; */

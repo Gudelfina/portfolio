@@ -51,12 +51,12 @@ const Projects = () => {
   return (
     <div className="projects" id="projects-nav">
       <h1 className="projects-header">Projects</h1>
-      <div className="project-container mx-auto p-10 md:p-20 grid lg:grid-cols-3 lg:gap-10 md:grid-cols-3 md:gap-10 2xl:grid-cols-3 grid-cols-1 gap-y-10">
+      <div className="project-container">
         {Object.keys(allProjects).map((key, i) => (
           <ul key={i}>
-            <li className="project-card flex-row justify-center align-center text-center h-full bg-white border border-gray-400 rounded-lg transform transition duration-700 ease-in-out hover:scale-110 hover:drop-shadow-2xl">
+            <li className="project-card">
               <button className="card-btn" onClick={() => handleModalOpen(key)}>
-                <div className="card-title m-8 text-lg bold">
+                <div className="card-title">
                   {allProjects[key].title}
                   <img src={allProjects[key].image} alt="project logo" />
                 </div>
@@ -85,17 +85,17 @@ const Projects = () => {
           }}
         >
           {selectedProject && (
-            <div className="modal-container flex flex-col justify-center items-center sm:grid-cols-1">
-              <div className="modal-title text-black text-center text-lg m-4">
+            <div className="modal-container">
+              <div className="modal-text-style" id="modal-title">
                 {selectedProject["title"]}
               </div>
-              <div className="modal-desc text-black text-center m-4">
+              <div className="modal-text-style" id="modal-desc">
                 {selectedProject["desc"]}
               </div>
-              <div className="modal-techstack text-black text-center m-4">
+              <div className="modal-text-style" id="modal-techstack">
                 {selectedProject["techStack"]}
               </div>
-              <div className="modal-link text-black m-4">
+              <div className="modal-link">
                 <a href={selectedProject["link"]} target="blank">
                   <Icon
                     className="logo-icon"
@@ -106,14 +106,9 @@ const Projects = () => {
                   />
                 </a>
               </div>
-              <div className="button-container">
-                <button
-                  className="text-black rounded-full bg-lightPurple p-2"
-                  onClick={handleModalClose}
-                >
-                  Close
-                </button>
-              </div>
+              <button className="button" onClick={handleModalClose}>
+                Close
+              </button>
             </div>
           )}
         </Modal>

@@ -9,3 +9,35 @@
 .projects-header {
   @apply h-auto w-auto m-8 text-4xl text-center text-white font-extrabold md:text-5xl lg:text-5xl;
 }
+
+.project-container {
+  @apply mx-auto p-10 grid grid-cols-1 gap-y-10 lg:grid-cols-3 lg:gap-10 md:p-20 md:grid-cols-3 md:gap-10 2xl:grid-cols-3;
+}
+
+.project-card {
+  @apply flex-row justify-center content-center text-center h-full bg-white border border-gray-400 rounded-lg transform transition duration-700 ease-in-out hover:scale-110 hover:drop-shadow-2xl;
+}
+
+.card-title {
+  @apply m-8 text-lg font-bold;
+}
+
+.modal-container {
+  @apply flex flex-col justify-center items-center sm:grid-cols-1;
+}
+
+#modal-title {
+  @apply text-lg;
+}
+
+.modal-text-style {
+  @apply text-black text-center m-4;
+}
+
+.modal-link {
+  @apply m-4;
+}
+
+.button {
+  @apply text-black rounded-full bg-lightPurple p-2;
+}

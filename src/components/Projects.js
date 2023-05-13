@@ -78,7 +78,7 @@ const Projects = () => {
             },
             content: {
               width: "350px",
-              height: "550px",
+              height: "fit-content",
               margin: "auto",
               border: "none",
             },
@@ -106,12 +106,14 @@ const Projects = () => {
                   />
                 </a>
               </div>
-              <button
-                className="text-black rounded-full bg-lightPurple p-2"
-                onClick={handleModalClose}
-              >
-                Close
-              </button>
+              <div className="button-container">
+                <button
+                  className="text-black rounded-full bg-lightPurple p-2"
+                  onClick={handleModalClose}
+                >
+                  Close
+                </button>
+              </div>
             </div>
           )}
         </Modal>

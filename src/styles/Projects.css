@@ -37,3 +37,15 @@
 .button {
   @apply text-black rounded-full bg-lightPurple p-2;
 }
+
+@media screen and (max-width: 768px) {
+  .ReactModal__Content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ReactModal__Content {
+    width: 90%;
+  }
+}

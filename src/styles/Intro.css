@@ -22,7 +22,7 @@
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 3s steps(30) forwards alternate infinite;
+  animation: typing 2s steps(25) forwards;
 }
 
 @keyframes typing {
@@ -30,7 +30,7 @@
     text-indent: 100%;
   }
   to {
-    text-indent: -10%;
+    text-indent: 0%;
   }
 }
 

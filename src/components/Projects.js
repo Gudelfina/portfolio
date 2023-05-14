@@ -77,7 +77,7 @@ const Projects = () => {
               justifyContent: "center",
             },
             content: {
-              width: "60%",
+              width: "70%",
               height: "fit-content",
               margin: "auto",
               border: "none",

@@ -3,28 +3,55 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import { Icon } from "@iconify/react";
 
 import "react-vertical-timeline-component/style.min.css";
 import "../styles/experience.css";
 
 const workData = [
   {
-    title: "Software Developer",
-    company: "OpenAI",
+    title: "Student",
+    company: "Galvanize: Hack Reactor",
     years: "2022 - 2023",
-    skills: "comunication",
+    skills: [
+      "Python",
+      "Javascript",
+      "CSS",
+      "HTML",
+      "React",
+      "Django",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+    ],
+    icon: <Icon icon="mdi:pencil-outline" color="white" />,
   },
   {
-    title: "Data Scientist",
-    company: "Google",
-    years: "2020 - 2022",
-    skills: "comunication",
+    title: "Digital Shopper",
+    company: "Walmart",
+    years: "2022-2023",
+    skills: [
+      "Communication ",
+      "Customer Service ",
+      "Problem Solving",
+      "Adaptability",
+      "Ogranization",
+      "Multi-tasking",
+    ],
+    icon: <Icon icon="material-symbols:shopping-bag-outline" color="white" />,
   },
   {
-    title: "System Engineer",
-    company: "Amazon",
-    years: "2018 - 2020",
-    skills: "comunication",
+    title: "Registered Nurse",
+    company: "Billings Clinic",
+    years: "2021",
+    skills: [
+      "Critical Thinking",
+      "Emergency Response",
+      "Teamwork",
+      "Cultural Competence",
+      "Time Management",
+    ],
+    icon: <Icon icon="icon-park-outline:nurse-cap" color="white" />,
   },
 ];
 
@@ -36,41 +63,53 @@ const Experience = () => {
           <div className="experience-header">
             <h1>Experience</h1>
           </div>
-          <VerticalTimeline animate={true}>
+          <VerticalTimeline>
             {workData.map((work, i) => (
               <VerticalTimelineElement
-                className="vertical-timeline-element--work text-black"
+                className="vertical-timeline-element--work"
                 iconStyle={{
-                  background: "#c9b1bd",
+                  background: "#b5838d",
                   color: "#fff",
                   textAlign: "center",
                 }}
-                // icon={<i className="fab fa-angular experience-icon"></i>}
-                // key={i}
+                icon={work.icon}
+                key={i}
               >
-                <h3 className="vertical-timeline-element-years text-left text-black">
+                <h3 className="vertical-timeline-element-style text-left text-black text-sm">
                   {work.years}
                 </h3>
-                <h3 className="vertical-timeline-element-title text-left text-black">
+                <h1
+                  className="vertical-timeline-element-style text-left text-black"
+                  id="title font-extrabold text-4xlg mt-10"
+                >
                   {work.title}
-                </h3>
-                <h4 className="vertical-timeline-element-subtitle text-left text-black">
+                </h1>
+                <h4 className="vertical-timeline-element-style text-left text-black text-sm mb-4">
                   {work.company}
                 </h4>
-                <h5 className="vertical-timeline-element-skills text-left text-black">
-                  {work.skills}
-                </h5>
+                <div className="flex flex-wrap gap-4">
+                  {work.skills.map((skill, index) => (
+                    <h5
+                      key={index}
+                      className="vertical-timeline-element-style text-left text-white text-sm"
+                    >
+                      <button className="bg-lightPurple rounded-full p-1">
+                        {skill}
+                      </button>
+                    </h5>
+                  ))}
+                </div>
               </VerticalTimelineElement>
             ))}
             <VerticalTimelineElement
               iconStyle={{
-                background: "#c9b1bd",
+                background: "#b5838d",
                 color: "#fff",
                 textAlign: "center",
               }}
-              // icon={
-              //   <i className="fas fa-hourglass-start mx-auto experience-icon"></i>
-              // }
+              icon={
+                <Icon icon="carbon:software-resource-cluster" color="white" />
+              }
             />
           </VerticalTimeline>
         </div>

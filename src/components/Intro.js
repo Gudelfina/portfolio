@@ -1,7 +1,6 @@
 import React from "react";
 
 import "../styles/Intro.css";
-// import girl from "../images/girl.png";
 import robot from "../images/robot.gif";
 
 const Intro = () => {

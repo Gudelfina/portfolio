@@ -1,13 +1,33 @@
-/* .experience {
-  @apply mx-auto flex-nowrap flex-row flex max-w-6xl py-8 m-8 text-white;
-
-}
-
-.experience > div {
-  @apply w-full md:w-full;
-} */
-
 .experience-header {
   @apply mb-20 pt-10 text-4xl text-center text-white font-extrabold md:text-5xl lg:text-5xl;
 }
-/* height: 600px; */
+
+.timeline-style {
+  @apply text-left text-black;
+}
+
+#years,
+#company,
+#timeline-skill {
+  @apply text-sm;
+}
+
+#title {
+  @apply font-extrabold text-xl mt-2;
+}
+
+#company {
+  @apply mb-3;
+}
+
+.timeline-skills {
+  @apply flex flex-wrap gap-4;
+}
+
+.timeline-skill {
+  @apply text-left text-white;
+}
+
+#timeline-button {
+  @apply bg-lightPurple rounded-full p-1;
+}

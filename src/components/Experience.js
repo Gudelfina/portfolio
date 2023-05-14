@@ -75,27 +75,23 @@ const Experience = () => {
                 icon={work.icon}
                 key={i}
               >
-                <h3 className="vertical-timeline-element-style text-left text-black text-sm">
+                <h3 className="timeline-style" id="years">
                   {work.years}
                 </h3>
-                <h1
-                  className="vertical-timeline-element-style text-left text-black"
-                  id="title font-extrabold text-4xlg mt-10"
-                >
+                <h1 className="timeline-style" id="title">
                   {work.title}
                 </h1>
-                <h4 className="vertical-timeline-element-style text-left text-black text-sm mb-4">
+                <h4 className="timeline-style" id="company">
                   {work.company}
                 </h4>
-                <div className="flex flex-wrap gap-4">
+                <div className="timeline-skills">
                   {work.skills.map((skill, index) => (
                     <h5
                       key={index}
-                      className="vertical-timeline-element-style text-left text-white text-sm"
+                      className="timeline-skill"
+                      id="timeline-skill"
                     >
-                      <button className="bg-lightPurple rounded-full p-1">
-                        {skill}
-                      </button>
+                      <button id="timeline-button">{skill}</button>
                     </h5>
                   ))}
                 </div>

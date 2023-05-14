@@ -1,7 +1,3 @@
-/* .modal-container * {
-  border: 1px solid black;
-} */
-
 .projects {
   @apply mx-auto flex-nowrap flex-row justify-center h-max max-w-6xl py-8 m-9 text-black;
 }

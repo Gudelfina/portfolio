@@ -1,7 +1,3 @@
-/* .sidebar-nav * {
-  border: 1px solid black;
-} */
-
 .sidebar-nav {
   display: flex;
   flex-direction: column;

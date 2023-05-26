@@ -1,13 +1,13 @@
 import React from "react";
 
 import "../styles/Intro.css";
-import robot from "../images/robot.gif";
+import girl from "../images/girl.png";
 
 const Intro = () => {
   return (
     <div className="container" id="intro-nav">
       <div className="polariod">
-        <img src={robot} alt="a robot looking at butterflies" />
+        <img src={girl} alt="a robot looking at butterflies" />
       </div>
       <span className="intro-heading">
         Hello,

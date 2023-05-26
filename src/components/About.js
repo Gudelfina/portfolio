@@ -1,12 +1,12 @@
 import React from "react";
 
 import "../styles/About.css";
-import me2 from "../images/me2.png";
+import me3 from "../images/me3.png";
 
 const AboutPage = () => {
   return (
     <>
-      <div className="bg-lightGreen">
+      <div className="bg-lightBeige">
         <div className="wrapper mx-auto max-w-6xl">
           <div className="about" id="about-nav">
             <div className="section-header">
@@ -14,7 +14,7 @@ const AboutPage = () => {
                 <h1>About me</h1>
               </div>
               <div className="about-content">
-                <img className="my-image" src={me2} alt="a girl" />
+                <img className="my-image" src={me3} alt="a girl" />
                 <div className="card-container">
                   <div className="card">
                     <h1 className="card-name">Hello, I'm Gudelfina!</h1>

@@ -57,7 +57,7 @@ const workData = [
 
 const Experience = () => {
   return (
-    <div className="bg-lightGreen">
+    <div className="bg-lightBeige">
       <div className="wrapper">
         <div className="experience" id="experience">
           <div className="experience-header">

@@ -35,5 +35,5 @@
 }
 
 .intro-name {
-  @apply text-2xl md:text-4xl lg:text-5xl font-extrabold text-brownLight dark:text-white;
+  @apply text-2xl md:text-4xl lg:text-5xl font-extrabold text-black dark:text-white;
 }

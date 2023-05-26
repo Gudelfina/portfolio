@@ -67,7 +67,7 @@ const NavBar = () => {
                 to="experience"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={30}
                 duration={500}
               >
                 /experience
@@ -81,7 +81,7 @@ const NavBar = () => {
           <Icon
             className="logo-icon"
             icon="ic:baseline-email"
-            color="#b5838d"
+            color="black"
             width="24"
             height="24"
           />
@@ -90,7 +90,7 @@ const NavBar = () => {
           <Icon
             className="logo-icon"
             icon="teenyicons:gitlab-solid"
-            color="#b5838d"
+            color="black"
             width="24"
             height="24"
           />
@@ -99,7 +99,7 @@ const NavBar = () => {
           <Icon
             className="logo-icon"
             icon="mdi:linkedin"
-            color="#b5838d"
+            color="black"
             width="24"
             height="24"
           />

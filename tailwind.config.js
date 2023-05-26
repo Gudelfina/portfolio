@@ -17,7 +17,7 @@ module.exports = {
         lg: "1400px",
       },
       colors: {
-        lightGreen: "#DED3A6",
+        lightBeige: "#fdf0d5",
         brownLight: "#a98467",
         darkGreen: "#3c5233",
         lightGray: "#E3DBDB",
@@ -32,3 +32,5 @@ module.exports = {
   },
   plugins: [require("flowbite/plugin")],
 };
+
+// lightGreen: "#DED3A6",

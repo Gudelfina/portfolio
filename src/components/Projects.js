@@ -50,7 +50,7 @@ const Projects = () => {
 
   return (
     <div className="projects" id="projects-nav">
-      <h1 className="projects-header">PROJECTS</h1>
+      <h1 className="projects-header">SOFTWARE CREATIONS</h1>
       <div className="project-container">
         {Object.keys(allProjects).map((key, i) => (
           <ul key={i}>

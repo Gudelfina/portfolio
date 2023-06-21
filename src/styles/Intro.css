@@ -45,3 +45,7 @@
 .intro-arrow {
   @apply pt-10 flex justify-center items-center animate-bounce;
 }
+
+.intro-underline {
+  @apply text-greenNeon underline decoration-solid;
+}

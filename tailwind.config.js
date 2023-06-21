@@ -19,7 +19,7 @@ module.exports = {
       colors: {
         slate: "#8892b0",
         greenNeon: "#64ffda",
-        darkGreen: "#3c5233",
+        darkBlue: "#002945",
         lightGray: "#E3DBDB",
         lightPurple: "#b5838d",
         modalPurple: "#c9b1bd",

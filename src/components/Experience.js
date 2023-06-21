@@ -57,59 +57,49 @@ const workData = [
 
 const Experience = () => {
   return (
-    <div className="bg-slate">
-      <div className="wrapper">
-        <div className="experience" id="experience">
-          <div className="experience-header">
-            <h1>EXPERIENCE</h1>
-          </div>
-          <VerticalTimeline>
-            {workData.map((work, i) => (
-              <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                iconStyle={{
-                  background: "#b5838d",
-                  color: "#fff",
-                  textAlign: "center",
-                }}
-                icon={work.icon}
-                key={i}
-              >
-                <h3 className="timeline-style" id="years">
-                  {work.years}
-                </h3>
-                <h1 className="timeline-style" id="title">
-                  {work.title}
-                </h1>
-                <h4 className="timeline-style" id="company">
-                  {work.company}
-                </h4>
-                <div className="timeline-skills">
-                  {work.skills.map((skill, index) => (
-                    <h5
-                      key={index}
-                      className="timeline-skill"
-                      id="timeline-skill"
-                    >
-                      <button id="timeline-button">{skill}</button>
-                    </h5>
-                  ))}
-                </div>
-              </VerticalTimelineElement>
-            ))}
-            <VerticalTimelineElement
-              iconStyle={{
-                background: "#b5838d",
-                color: "#fff",
-                textAlign: "center",
-              }}
-              icon={
-                <Icon icon="carbon:software-resource-cluster" color="white" />
-              }
-            />
-          </VerticalTimeline>
-        </div>
+    <div className="experience" id="experience">
+      <div className="experience-header">
+        <h1>EXPERIENCE</h1>
       </div>
+      <VerticalTimeline>
+        {workData.map((work, i) => (
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            iconStyle={{
+              background: "#b5838d",
+              color: "#fff",
+              textAlign: "center",
+            }}
+            icon={work.icon}
+            key={i}
+          >
+            <h3 className="timeline-style" id="years">
+              {work.years}
+            </h3>
+            <h1 className="timeline-style" id="title">
+              {work.title}
+            </h1>
+            <h4 className="timeline-style" id="company">
+              {work.company}
+            </h4>
+            <div className="timeline-skills">
+              {work.skills.map((skill, index) => (
+                <h5 key={index} className="timeline-skill" id="timeline-skill">
+                  <button id="timeline-button">{skill}</button>
+                </h5>
+              ))}
+            </div>
+          </VerticalTimelineElement>
+        ))}
+        <VerticalTimelineElement
+          iconStyle={{
+            background: "#b5838d",
+            color: "#fff",
+            textAlign: "center",
+          }}
+          icon={<Icon icon="carbon:software-resource-cluster" color="white" />}
+        />
+      </VerticalTimeline>
     </div>
   );
 };

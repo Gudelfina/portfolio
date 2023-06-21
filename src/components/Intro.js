@@ -14,10 +14,12 @@ const Intro = () => {
         </span>
         <div className="intro-desc">
           <p>
-            {" "}
-            Dedicated full-stack software engineer who is driven to contribute
-            to the world through innovative and impactful technological
-            solutions{" "}
+            Dedicated full-stack{" "}
+            <span className="text-greenNeon">{"software engineer  "}</span>
+            who is driven to contribute to the world through{" "}
+            <span className="intro-underline">{"innovative  "}</span>
+            and <span className="intro-underline">{"impactful"}</span>{" "}
+            technological solutions
           </p>
         </div>
         <div className="intro-arrow">

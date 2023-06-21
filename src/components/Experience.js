@@ -57,11 +57,11 @@ const workData = [
 
 const Experience = () => {
   return (
-    <div className="bg-lightBeige">
+    <div className="bg-slate">
       <div className="wrapper">
         <div className="experience" id="experience">
           <div className="experience-header">
-            <h1>Experience</h1>
+            <h1>EXPERIENCE</h1>
           </div>
           <VerticalTimeline>
             {workData.map((work, i) => (

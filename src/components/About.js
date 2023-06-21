@@ -6,12 +6,12 @@ import me3 from "../images/me3.png";
 const AboutPage = () => {
   return (
     <>
-      <div className="bg-lightBeige">
+      <div className="bg-slate">
         <div className="wrapper mx-auto max-w-6xl">
           <div className="about" id="about-nav">
             <div className="section-header">
               <div className="about-me">
-                <h1>About me</h1>
+                <h1>ABOUT ME</h1>
               </div>
               <div className="about-content">
                 <img className="my-image" src={me3} alt="a girl" />

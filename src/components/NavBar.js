@@ -81,7 +81,7 @@ const NavBar = () => {
           <Icon
             className="logo-icon"
             icon="ic:baseline-email"
-            color="black"
+            color="#64ffda"
             width="24"
             height="24"
           />
@@ -90,7 +90,7 @@ const NavBar = () => {
           <Icon
             className="logo-icon"
             icon="teenyicons:gitlab-solid"
-            color="black"
+            color="#64ffda"
             width="24"
             height="24"
           />
@@ -99,7 +99,7 @@ const NavBar = () => {
           <Icon
             className="logo-icon"
             icon="mdi:linkedin"
-            color="black"
+            color="#64ffda"
             width="24"
             height="24"
           />

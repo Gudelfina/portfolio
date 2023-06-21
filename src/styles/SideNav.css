@@ -23,7 +23,6 @@
   padding: 0.2em;
   font-weight: bold;
   padding-top: 0px;
-  color: black;
   align-items: flex-end;
 }
 
@@ -39,7 +38,7 @@
 
 .sidebar-links a {
   text-decoration: none;
-  @apply text-black hover:text-pink-300 font-bold;
+  @apply text-greenNeon hover:text-pink-300 font-bold;
 }
 
 .sidebar-logos {

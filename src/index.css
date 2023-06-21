@@ -4,12 +4,12 @@
 
 body {
   margin: 0;
-  font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "Vidaloka", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e5989b;
+  background-color: #002945;
   color: white;
 }
 
@@ -19,3 +19,4 @@ code {
 }
 
 /* 264027 */
+/* #e5989b */

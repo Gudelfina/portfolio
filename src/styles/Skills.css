@@ -7,7 +7,7 @@
 }
 
 .skills-icons {
-  @apply pb-10 grid grid-cols-3 gap-y-5 lg:grid-cols-6 lg:gap-10 lg:justify-center lg:items-center md:grid-cols-6 md:gap-10 2xl:grid-cols-10;
+  @apply pb-10 grid grid-cols-2 gap-y-5 lg:grid-cols-6 lg:gap-10 lg:justify-center lg:items-center md:grid-cols-6 md:gap-10 2xl:grid-cols-10;
 }
 
 .icon-border {

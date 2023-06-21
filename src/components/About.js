@@ -19,14 +19,23 @@ const AboutPage = () => {
                   <div className="card">
                     <h1 className="card-name">Hello, I'm Gudelfina!</h1>
                     <p className="card-content">
-                      I'm a <b>software engineer</b> based in Wyoming. Before
-                      becoming a software engineer, I was a registered nurse
-                      working in the ICU. While, I loved being able to help and
-                      care for people, it began to take a toll on me, mentally
-                      and physcially. So I decided to change careers and become
-                      a software engineer! I've always had a great interest in
-                      building something from scratch, artificial intelligence,
-                      and everything in between!
+                      I'm a passionate problem solver and software engineer
+                      based in Wyoming. With a background as a registered nurse
+                      in the ICU, I transitioned to software engineering to
+                      pursue my fascination with building things from scratch
+                      and exploring the realms of artificial intelligence and
+                      technology. Particularly, I'm driven to introduce the
+                      young generation, especially young women, to the exciting
+                      world of technology and inspire them to pursue their
+                      passions in coding and AI. Additionally, I'm dedicated to
+                      continuously learning about artificial intelligence and
+                      generative art, seeking ways to leverage their potential
+                      for innovation and creativity. Overall, I aim to make a
+                      positive impact by combining my technical expertise with
+                      my passion for empowering others and exploring the cutting
+                      edge of technology and art. Thank you for taking time to
+                      view my portfolio, I'm looking forward to connecting with
+                      you soon!
                     </p>
                     <a
                       href={require("../resume/resume.pdf")}

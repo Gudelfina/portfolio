@@ -1,4 +1,6 @@
 import React from "react";
+import { Icon } from "@iconify/react";
+import { Link } from "react-scroll";
 
 import "../styles/Intro.css";
 
@@ -17,6 +19,22 @@ const Intro = () => {
             to the world through innovative and impactful technological
             solutions{" "}
           </p>
+        </div>
+        <div className="intro-arrow">
+          <Link
+            to="about-nav"
+            spy={true}
+            smooth={true}
+            offset={2}
+            duration={500}
+          >
+            <Icon
+              icon="mingcute:arrow-down-fill"
+              color="#8892b0"
+              width="40"
+              height="40"
+            />
+          </Link>
         </div>
       </div>
     </div>

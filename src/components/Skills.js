@@ -2,6 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 
 import "../styles/Skills.css";
+import FadeInSection from "./FadeInSection";
 
 const Skills = () => {
   const icons = [
@@ -128,15 +129,17 @@ const Skills = () => {
     <div className="bg-slate">
       <div className="wrapper">
         <div className="skills" id="skills-nav">
-          <div className="skills-heading">SKILLS</div>
-          <div className="skills-icons">
-            {icons.map((item, i) => (
-              <div className="icon-border" key={i}>
-                {item.icon}
-                <p className="icon-text">{item.text}</p>
-              </div>
-            ))}
-          </div>
+          <FadeInSection>
+            <div className="skills-heading">SKILLS</div>
+            <div className="skills-icons">
+              {icons.map((item, i) => (
+                <div className="icon-border" key={i}>
+                  {item.icon}
+                  <p className="icon-text">{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </FadeInSection>
         </div>
       </div>
     </div>

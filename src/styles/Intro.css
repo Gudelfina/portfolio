@@ -9,7 +9,7 @@
 }
 
 .container {
-  @apply mx-auto p-8 flex justify-center items-center text-center max-w-6xl text-white h-96 sm:h-auto sm:w-auto;
+  @apply mx-auto p-8 flex justify-center items-center text-center max-w-6xl text-white h-full sm:h-auto sm:w-auto;
   height: 600px;
 }
 

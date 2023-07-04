@@ -7,6 +7,7 @@ import task from "../images/task.png";
 import playboxx from "../images/playboxx.png";
 import car from "../images/car.png";
 import project from "../images/project.png";
+import FadeInSection from "./FadeInSection";
 
 Modal.setAppElement("body");
 
@@ -59,81 +60,86 @@ const Projects = () => {
 
   return (
     <div className="projects" id="projects-nav">
-      <h1 className="projects-header">SOFTWARE CREATIONS</h1>
-      <div className="project-container">
-        {Object.keys(allProjects).map((key, i) => (
-          <ul key={i}>
-            <li className="project-card">
-              <button className="card-btn" onClick={() => handleModalOpen(key)}>
-                <div className="card-title">
-                  {allProjects[key].title}
-                  <img src={allProjects[key].image} alt="project logo" />
+      <FadeInSection>
+        <h1 className="projects-header">SOFTWARE CREATIONS</h1>
+        <div className="project-container">
+          {Object.keys(allProjects).map((key, i) => (
+            <ul key={i}>
+              <li className="project-card">
+                <button
+                  className="card-btn"
+                  onClick={() => handleModalOpen(key)}
+                >
+                  <div className="card-title">
+                    {allProjects[key].title}
+                    <img src={allProjects[key].image} alt="project logo" />
+                  </div>
+                </button>
+              </li>
+            </ul>
+          ))}
+          <Modal
+            isOpen={modalOpen}
+            onRequestClose={handleModalClose}
+            contentLabel="Project Details"
+            appElement={document.getElementById("app")}
+            style={{
+              overlay: {
+                backgroundColor: "#c9b1bd",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              },
+              content: {
+                width: "70%",
+                height: "fit-content",
+                margin: "auto",
+                border: "none",
+              },
+            }}
+          >
+            {selectedProject && (
+              <div className="modal-container">
+                <div className="modal-text-style" id="modal-title">
+                  {selectedProject["title"]}
                 </div>
-              </button>
-            </li>
-          </ul>
-        ))}
-        <Modal
-          isOpen={modalOpen}
-          onRequestClose={handleModalClose}
-          contentLabel="Project Details"
-          appElement={document.getElementById("app")}
-          style={{
-            overlay: {
-              backgroundColor: "#c9b1bd",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            },
-            content: {
-              width: "70%",
-              height: "fit-content",
-              margin: "auto",
-              border: "none",
-            },
-          }}
-        >
-          {selectedProject && (
-            <div className="modal-container">
-              <div className="modal-text-style" id="modal-title">
-                {selectedProject["title"]}
-              </div>
-              <div className="modal-text-style" id="modal-desc">
-                {selectedProject["desc"]}
-              </div>
-              <div className="modal-text-style" id="modal-techstack">
-                {selectedProject["techStack"]}
-              </div>
-              <div className="modal-text-style" id="modal-websiteLink">
-                {selectedProject && selectedProject.websiteLink && (
-                  <a href={selectedProject.websiteLink} target="black">
+                <div className="modal-text-style" id="modal-desc">
+                  {selectedProject["desc"]}
+                </div>
+                <div className="modal-text-style" id="modal-techstack">
+                  {selectedProject["techStack"]}
+                </div>
+                <div className="modal-text-style" id="modal-websiteLink">
+                  {selectedProject && selectedProject.websiteLink && (
+                    <a href={selectedProject.websiteLink} target="black">
+                      <Icon
+                        icon="ph:link-bold"
+                        color="#b5838d"
+                        width="24"
+                        height="24"
+                      />
+                    </a>
+                  )}
+                </div>
+                <div className="modal-link">
+                  <a href={selectedProject["link"]} target="blank">
                     <Icon
-                      icon="ph:link-bold"
+                      className="logo-icon"
+                      icon="teenyicons:gitlab-solid"
                       color="#b5838d"
                       width="24"
                       height="24"
                     />
                   </a>
-                )}
+                </div>
+                <button className="button" onClick={handleModalClose}>
+                  Close
+                </button>
               </div>
-              <div className="modal-link">
-                <a href={selectedProject["link"]} target="blank">
-                  <Icon
-                    className="logo-icon"
-                    icon="teenyicons:gitlab-solid"
-                    color="#b5838d"
-                    width="24"
-                    height="24"
-                  />
-                </a>
-              </div>
-              <button className="button" onClick={handleModalClose}>
-                Close
-              </button>
-            </div>
-          )}
-        </Modal>
-      </div>
+            )}
+          </Modal>
+        </div>
+      </FadeInSection>
     </div>
   );
 };

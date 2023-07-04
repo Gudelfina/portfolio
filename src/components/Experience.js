@@ -7,6 +7,7 @@ import { Icon } from "@iconify/react";
 
 import "react-vertical-timeline-component/style.min.css";
 import "../styles/experience.css";
+import FadeInSection from "./FadeInSection";
 
 const workData = [
   {
@@ -58,9 +59,11 @@ const workData = [
 const Experience = () => {
   return (
     <div className="experience" id="experience">
-      <div className="experience-header">
-        <h1>EXPERIENCE</h1>
-      </div>
+      <FadeInSection>
+        <div className="experience-header">
+          <h1>EXPERIENCE</h1>
+        </div>
+      </FadeInSection>
       <VerticalTimeline>
         {workData.map((work, i) => (
           <VerticalTimelineElement
